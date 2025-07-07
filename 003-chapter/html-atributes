@@ -1,0 +1,7 @@
+<a href="https://ksergey.ru" target="_blank">Перейти на сайт</a>
+
+<img src="image_path.jpg" alt="Описание картинки">
+
+<input type="text" placeholder="Введите ваше имя">  
+<input type="button" value="Кнопка">
+<input type="radio"><label>Текст</label>
