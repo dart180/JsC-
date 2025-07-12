@@ -40,6 +40,7 @@ p {
 .task-large-blue {
     font-size: 24px;
     color:blue;
+    text-decoration: underline;
 }
 
 .task-justify {}
