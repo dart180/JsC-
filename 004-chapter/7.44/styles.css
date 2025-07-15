@@ -1,0 +1,43 @@
+body{
+    background-color: gray;
+}
+h1{
+    background-color: red;
+    height: 200px;
+    display: inline-block;
+}
+
+.rectangle{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    background: linear-gradient(to right, red, yellow);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.circle{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    background: radial-gradient(circle, blue, green);
+    border-radius: 50%;
+    transform: translate(-50%, -50%)
+}
+.angle{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid;
+    transform: translate(-50%, -50%);
+    background: conic-gradient(rgb(117, 14, 14), yellow, green, blue);
+}
