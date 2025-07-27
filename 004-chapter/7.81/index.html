@@ -16,21 +16,35 @@
             /* Используется шрифт Montserrat для текста внутри body */
             font-family: 'Montserrat', sans-serif;
             display: flex;
-            gap: 10px;
-            text-align: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+            height: 100vh;
+            align-items: center;
         }
 
         .card {
+            width: 300px;
             /* Цвет фона карточки */
-            background-color: gainsboro;
+            background-color: #fff;
             border-radius: 10px;
-            flex: 0 0 200px;
-            height: auto;
+            box-shadow: 0 5px 5px #0000001a;
+            /* внутренний отступ карточки */
+            padding: 5px;
+            /* внешний отступ карточки */
+            margin: 5px;
+            /* Отображение элементов внутри карточки в строку */
+            display: flex;
+            /* направление внутри карточки */
+            flex-direction: column;
+            /* выравнивание элементов внутри карточки по центру */
+            align-items: center;
+            max-width: 200px;
         }
 
         .card h2 {
             /* Внутренний отступ для заголовка h2 */
             margin: 5px;
+            text-align: center;
         }
 
 
@@ -45,14 +59,15 @@
 
         .button {
             /* Цвет фона кнопки */
-            background-color: #3d9740;
             color: white;
+            background-color: green;
             text-decoration: none;
-            border-radius: 5px;
-            padding: 5px 15px;
-            margin: 10px;
-            align-self: center;
-            display: inline-block;
+            border-radius: 10px;
+            padding: 5px 20px;
+            margin: 5px 20px;
+            font-size: 20px;
+            text-align: center;
+            transition: background-color 0.2s linear;
         }
 
         .button:hover {
@@ -63,13 +78,15 @@
         ul {
             /* Удаление маркеров списка */
             list-style: none;
-            
+            margin: 0 0 10px 0;
+            padding: 0;
+            text-align: center;
         }
 
         li {
             /* Внешний отступ элементов списка */
             margin: 5px ;
-            margin-right: 45px;
+            font-family: 'Roboto-Mono', monospace;
             
         }
 
@@ -79,7 +96,6 @@
                 flex-direction: column;
                 /* Выравнивание элементов по центру при изменении направления */
                 align-items: center;
-                flex: 0 0 200px;
             }
         }
     </style>
