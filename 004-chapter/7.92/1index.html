@@ -24,13 +24,20 @@
 
         .teacher {
             background-color: bisque;
-            grid-column: span 2;
+            grid-column-start: 1;
+            grid-column-end: 3;
         }
 
         .scientist {
             grid-column: span 2;
             /* grid-column-start: 1; */
             order: 1;
+
+            /* grid-row-start: 2;
+            grid-column-start: 1;
+            grid-row-end: 3;
+            grid-column-end: 3;
+            grid-area: 2/1/3/3; */
         }
 
         .programmer {
