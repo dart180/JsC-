@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .body{
+        }
+        .header,.footer{
+            display: flex;
+            background-color: gray;
+            width: auto;
+            height: 70px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            background-color: white;
+            height: 80vh;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 6fr;
+        }
+        .aside{
+            background-color: rgb(190, 190, 190);
+        }
+        .main{
+            background-color: aliceblue;
+            display: grid;
+            grid-column: repeat(3,1fr);
+        }
+        .section{
+            background-color: rgb(180, 179, 177);
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">Header</div>
+    <div class="container">
+        <div class="aside">Side Panel</div>
+        <div class="main">
+            <div class="section">Content Section 1</div>
+            <div class="section">Content Section 2</div>
+            <div class="section">Content Section 3</div>
+        </div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+
+</html>
