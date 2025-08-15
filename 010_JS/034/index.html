@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button, div{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Калькулятор чаевых</h1>
+        <div>Сумма счета: <input id = "amountDinner" type="number" style="width: 200px;"></div>
+        <div>Процент чаевых: <input id = "tips" type="number" style="width: 200px;"></div>
+        <div>Гостей: <input id = "numberPeople" type="number" style="width: 200px;"></div>
+        <button id="btnCalc">Рассчитать</button>
+    </div>
+    <div>
+        <h1>Результаты</h1>
+        <div id="amountTips">Чаевые: </div>
+        <div id="totalAmount">Общая сумма: </div>
+        <div id="amountInPeople">Сумма на человека: </div>
+    </div>
+    <script src="./ex.js"></script>
+</body>
+</html>
